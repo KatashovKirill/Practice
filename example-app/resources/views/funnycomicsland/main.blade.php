@@ -8,30 +8,70 @@
     <title>Funny Comics Land</title>
 </head>
 <body>
-<header>
+
+    <header class="headerTop">
+        <div class="singinup">
+            <div class="Registraciya" role="link">
+                <a href="#">Регистрация</a>
+            </div>
+
+            <div class="Vhod" role="link">
+                <a href="#">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <header class="headerBottom">
         <div class="header">
             <div class="menu">
                 <div class="O_Nas" role="link">
                     <a href="#">О нас</a>
                 </div>
+
                 <div class="Katalog" role="link">
                     <a href="#">Каталог</a>
                 </div>
+
                 <div class="Tovar" role="link">
                     <a href="#">Товар</a>
                 </div>
+
                 <div class="Gde_Nas_Naiti" role="link">
                     <a href="#">Где нас найти?</a>
                 </div>
             </div>
-            <div class="singinup">
-                <button name="Singup">Регистрация</button>
-                <button name="Singin">Вход</button>
-            </div>
         </div>
+
+        <div class="korzina">
+            <img src="images/Icons/Karzina.png">
+        </div>
+
     </header>
     <div class="novinki">
-        
+        <div>Новинки нашего сайта</div>
+
+        <div class="Novie_Knigi">
+            <div class="Novaya_Knigga">
+                <img src="images/books/340951.jpg">
+                <div class="avtor">Джон Френч</div>
+                <div class="Nazvanie">Мортис</div>
+            </div>
+            <div class="Novaya_Knigga">
+                <img src="images/books/341024.jpg">
+                <div class="avtor">Грэм Макнилл</div>
+                <div class="Nazvanie">Ярость Магнуса</div>
+            </div>
+            <div class="Novaya_Knigga">
+                <img src="images/books/339398.jpg">
+                <div class="avtor">Дэн Абнетт</div>
+                <div class="Nazvanie">Под знаком Сатурна</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="O_Nas1">
+        <div class="Deviz">Принесём веру императора в каждый дом!</div>
+        <div class="O_Nas2">!!!Название магазина!!! крупнейший поставщик книг и комиксов по Warhammer 40.000, Warhammer: Age of Sigma, Warhammer: The Horus Heresy. Дотавка осуществляется на всей территории Российской Федерации.</div>
     </div>
 </body>
 </html>

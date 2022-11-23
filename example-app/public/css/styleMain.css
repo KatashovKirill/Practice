@@ -8,7 +8,33 @@ body{
     height: 9000px;
 }
 
-header{
+.headerTop{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(93, 104, 114);
+}
+
+.singinup{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    font-size: 15px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 110px;
+}
+
+.singinup > div{
+    padding-left: 6%;
+}
+
+.singinup > div > a{
+    color: rgb(255, 255, 255);
+}
+
+.headerBottom{
     width: 100%;
     height: 70px;
     position: relative;
@@ -21,7 +47,7 @@ header{
 }
 
 .header{
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -33,7 +59,7 @@ header{
     width: 100%;
     height: 100%;
     margin-left: 15px;
-    margin-right: 0%;
+    margin-right: -10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,21 +134,95 @@ a{
     cursor: pointer;
 }
 
-.singinup{
+.korzina{
     display: flex;
-    flex-direction: column;
-    margin-top: -10px;
+    margin-right: 5%;
 }
 
-.singinup > button{
-    margin-top: 10px;
-    margin-right: -150px;
-    font-size: 17px;
-    width: 110px;
+.korzina > img{
+    height: 40px;
+    width: 40px;
 }
 
 .novinki{
     height: 500px;
     width: 100%;
+    color: rgb(255, 255, 255);
     background-color: rgb(34, 85, 126);
+}
+
+.novinki > div{
+    height: 5%;
+    width: 100%;
+    font-size: 25px;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.novinki > div + div{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.Novie_Knigi{
+    width: 100%;
+}
+
+.novinki > .Novie_Knigi{
+    height: 100%;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.novinki > .Novie_Knigi > .Novaya_Knigga {
+    margin-left: 15%;
+}
+
+.novinki > .Novie_Knigi > .Novaya_Knigga + .Novaya_Knigga  + .Novaya_Knigga{
+    margin-right: 13.5%;
+}
+
+.novinki > .Novie_Knigi > .Novaya_Knigga > img{
+    box-shadow: 1px 1px 2px black;
+}
+
+.novinki > .Novie_Knigi > .Novaya_Knigga > .avtor{
+    font-size: 15px;
+    text-shadow: 0px 0px 8px black; 
+}
+
+.novinki > .Novie_Knigi > .Novaya_Knigga > .avtor + .Nazvanie{
+    margin-top: 1%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    text-shadow: 0px 0px 8px black; 
+}
+
+.O_Nas1{
+    height: 100px;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 8px black; 
+    background-color: rgb(106, 120, 133);
+}
+
+.O_Nas1 > .Deviz{
+    font-size: 23px;
+    color: rgb(220, 220, 220);
+}
+
+.O_Nas1 > .Deviz + .O_Nas2{
+    font-size: 18px;
+    color: rgb(220, 220, 220);
 }
