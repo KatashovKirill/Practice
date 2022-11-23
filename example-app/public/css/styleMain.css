@@ -6,6 +6,7 @@
 body{
     width: 100%;
     height: 9000px;
+    background-color: rgb(219, 219, 219);
 }
 
 .headerTop{
@@ -149,6 +150,11 @@ a{
     width: 100%;
     color: rgb(255, 255, 255);
     background-color: rgb(34, 85, 126);
+    box-sizing: border-box;
+    border: 100px solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: rgb(29, 70, 104);
 }
 
 .novinki > div{

@@ -48,7 +48,7 @@
 
     </header>
     <div class="novinki">
-        <div>Новинки нашего сайта</div>
+        <div>Новинки нашего магазина</div>
 
         <div class="Novie_Knigi">
             <div class="Novaya_Knigga">
