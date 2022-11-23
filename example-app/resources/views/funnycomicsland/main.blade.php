@@ -30,5 +30,8 @@
             </div>
         </div>
     </header>
+    <div class="novinki">
+        
+    </div>
 </body>
 </html>
