@@ -7,6 +7,4 @@ Route::get('funnycomicsland', [App\Http\Controllers\funnycomicslandController::c
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
