@@ -73,5 +73,11 @@
         <div class="Deviz">Принесём веру императора в каждый дом!</div>
         <div class="O_Nas2">!!!Название магазина!!! крупнейший поставщик книг и комиксов по Warhammer 40.000, Warhammer: Age of Sigma, Warhammer: The Horus Heresy. Дотавка осуществляется на всей территории Российской Федерации.</div>
     </div>
+
+    <div class="Katalog_Header">
+        <img src="images/katalogImg/40k-nav-logo.webp">
+        <img src="images/katalogImg/40k-nav-logo.webp">
+        <img src="images/katalogImg/40k-nav-logo.webp">
+    </div>
 </body>
 </html>
