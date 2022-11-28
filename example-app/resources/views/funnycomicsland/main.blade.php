@@ -75,9 +75,20 @@
     </div>
 
     <div class="Katalog_Header">
-        <img src="images/katalogImg/40k-nav-logo.webp">
-        <img src="images/katalogImg/40k-nav-logo.webp">
-        <img src="images/katalogImg/40k-nav-logo.webp">
+        <div>
+            <img src="images/katalogImg/40k-nav-logo.webp">
+        </div>
+        <div>
+            <img src="images/katalogImg/HH-Nav-logo.webp">
+        </div>
+        <div>
+            <img src="images/katalogImg/New_AOS_Logo.webp">
+        </div>
     </div>
+    <!-- <div class="katalogTovarov1">
+        <div class="tovar1">
+
+        </div>
+    </div> -->
 </body>
 </html>
