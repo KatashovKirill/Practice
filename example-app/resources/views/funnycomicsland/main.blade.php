@@ -110,7 +110,7 @@
 
             <section>
                 <div class="card">
-                    @foreach($arr as $elem)
+                    @foreach($products as $elem)
                         <img src="images/books/solar_war.jpg" alt="Солнечная война">
                         <h3>{{$elem->name}}</h3>
                         <h5>{{$elem->author}}</h5>

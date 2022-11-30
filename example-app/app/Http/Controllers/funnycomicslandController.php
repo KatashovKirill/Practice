@@ -9,15 +9,10 @@ class funnycomicslandController extends Controller
 			return view('funnycomicsland.main');
 		}
 		
-		public function showProduct()
-		{
-			$p = \APP\MODEL\product::ALL();
-			return $p[0];
-		}
-
 		public function test() 
 		{
-			$t = DB::table('products') -> get();
-			return view('test', ['arr' => $t]);
+			$p = DB::table('products') -> get();
+			dd($p);
+			return view('funnycomicsland.main', ['products' => $p]);
 		}
 }
