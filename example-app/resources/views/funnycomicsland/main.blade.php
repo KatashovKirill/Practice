@@ -76,19 +76,48 @@
 
     <div class="Katalog_Header">
         <div>
-            <img src="images/katalogImg/40k-nav-logo.webp">
+            <a href="#"><img href="#" src="images/katalogImg/40k-nav-logo.webp"></a>
         </div>
         <div>
-            <img src="images/katalogImg/HH-Nav-logo.webp">
+            <a href="#"><img href="#" src="images/katalogImg/HH-Nav-logo.webp"></a>
         </div>
         <div>
-            <img src="images/katalogImg/New_AOS_Logo.webp">
+            <a href="#"><img href="#" src="images/katalogImg/New_AOS_Logo.webp"></a>
         </div>
     </div>
-    <!-- <div class="katalogTovarov1">
-        <div class="tovar1">
+    <div class="Katalog_Tovarov">
+        <div class="Cikl1">
+        <div class="Nazvanie_Cikla">«Ересь Хоруса. Осада Терры».</div>
+            <section>
+                <div class="card">
+                    <a href="#"><img src="images/books/solar_war.jpg" alt="Солнечная война"></a>
+                    <h3>Солнечная война</h3>
+                    <h5>Джон Фетч</h5>
+                    <p class="price">859 руб.</p>
+                    <button>В корзину</button>
+                </div>
+            </section>
 
+            <section>
+                <div class="card">
+                    <img src="images/books/the_lost_and_the_damned.jpg" alt="Заблудшие и проклятые">
+                    <h3>Заблудшие и проклятые</h3>
+                    <h5>Гай Хейли</h5>
+                    <p class="price">1 759 руб.</p>
+                    <button>В корзину</button>
+                </div>
+            </section>
+
+            <section>
+                <div class="card">
+                    <img src="images/books/solar_war.jpg" alt="Солнечная война">
+                    <h3>Солнечная война</h3>
+                    <h5>Джон Фетч</h5>
+                    <p class="price">3 450 руб.</p>
+                    <button>В корзину</button>
+                </div>
+            </section>
         </div>
-    </div> -->
+    </div>
 </body>
 </html>

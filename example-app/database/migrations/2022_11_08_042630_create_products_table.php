@@ -20,7 +20,12 @@ return new class extends Migration
             $table->string("price");
             $table->string("img");
         });
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('author');
+        });
     }
+    
 
     /**
      * Reverse the migrations.
