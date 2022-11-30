@@ -17,12 +17,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string("name");
+            $table->string('author');
             $table->string("price");
             $table->string("img");
-        });
-
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('author');
         });
     }
     

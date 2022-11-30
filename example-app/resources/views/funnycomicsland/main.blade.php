@@ -110,10 +110,12 @@
 
             <section>
                 <div class="card">
-                    <img src="images/books/solar_war.jpg" alt="Солнечная война">
-                    <h3>Солнечная война</h3>
-                    <h5>Джон Фетч</h5>
-                    <p class="price">3 450 руб.</p>
+                    @foreach($arr as $elem)
+                        <img src="images/books/solar_war.jpg" alt="Солнечная война">
+                        <h3>{{$elem->name}}</h3>
+                        <h5>{{$elem->author}}</h5>
+                        <p class="price">{{$elem->price}} руб.</p>
+                    @endforeach
                     <button>В корзину</button>
                 </div>
             </section>
