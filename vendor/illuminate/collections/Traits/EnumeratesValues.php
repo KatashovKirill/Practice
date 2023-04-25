@@ -114,11 +114,10 @@ trait EnumeratesValues
     /**
      * Wrap the given value in a collection if applicable.
      *
-     * @template TWrapKey of array-key
      * @template TWrapValue
      *
-     * @param  iterable<TWrapKey, TWrapValue>  $value
-     * @return static<TWrapKey, TWrapValue>
+     * @param  iterable<array-key, TWrapValue>|TWrapValue  $value
+     * @return static<array-key, TWrapValue>
      */
     public static function wrap($value)
     {
@@ -297,9 +296,11 @@ trait EnumeratesValues
     /**
      * Get a single key's value from the first matching item in the collection.
      *
+     * @template TValueDefault
+     *
      * @param  string  $key
-     * @param  mixed  $default
-     * @return mixed
+     * @param  TValueDefault|(\Closure(): TValueDefault)  $default
+     * @return TValue|TValueDefault
      */
     public function value($key, $default = null)
     {
@@ -358,8 +359,11 @@ trait EnumeratesValues
     /**
      * Map a collection and flatten the result by a single level.
      *
-     * @param  callable(TValue, TKey): mixed  $callback
-     * @return static<int, mixed>
+     * @template TFlatMapKey of array-key
+     * @template TFlatMapValue
+     *
+     * @param  callable(TValue, TKey): (\Illuminate\Support\Collection<TFlatMapKey, TFlatMapValue>|array<TFlatMapKey, TFlatMapValue>)  $callback
+     * @return static<TFlatMapKey, TFlatMapValue>
      */
     public function flatMap(callable $callback)
     {
@@ -692,8 +696,10 @@ trait EnumeratesValues
     /**
      * Pass the collection into a new class.
      *
-     * @param  class-string  $class
-     * @return mixed
+     * @template TPipeIntoValue
+     *
+     * @param  class-string<TPipeIntoValue>  $class
+     * @return TPipeIntoValue
      */
     public function pipeInto($class)
     {
@@ -763,9 +769,24 @@ trait EnumeratesValues
     }
 
     /**
+     * Reduce an associative collection to a single value.
+     *
+     * @template TReduceWithKeysInitial
+     * @template TReduceWithKeysReturnType
+     *
+     * @param  callable(TReduceWithKeysInitial|TReduceWithKeysReturnType, TValue, TKey): TReduceWithKeysReturnType  $callback
+     * @param  TReduceWithKeysInitial  $initial
+     * @return TReduceWithKeysReturnType
+     */
+    public function reduceWithKeys(callable $callback, $initial = null)
+    {
+        return $this->reduce($callback, $initial);
+    }
+
+    /**
      * Create a collection of all elements that do not pass a given truth test.
      *
-     * @param  (callable(TValue, TKey): bool)|bool  $callback
+     * @param  (callable(TValue, TKey): bool)|bool|TValue  $callback
      * @return static
      */
     public function reject($callback = true)
