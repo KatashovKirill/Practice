@@ -24,21 +24,9 @@
     <header class="headerBottom">
         <div class="header">
             <div class="menu">
-                <div class="O_Nas" role="link">
-                    <a href="#">О нас</a>
-                </div>
+                
 
-                <div class="Katalog" role="link">
-                    <a href="#">Каталог</a>
-                </div>
-
-                <div class="Tovar" role="link">
-                    <a href="#">Товар</a>
-                </div>
-
-                <div class="Gde_Nas_Naiti" role="link">
-                    <a href="#">Где нас найти?</a>
-                </div>
+            
             </div>
         </div>
 

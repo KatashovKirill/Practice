@@ -4,71 +4,11 @@
 }
 
 body{
-    width: 100%;
-    height: 9000px;
     background-color: rgb(219, 219, 219);
 }
 
-.headerTop{
-    height: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: rgb(93, 104, 114);
-}
-
-.singinup{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
-    font-size: 15px;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: row;
-    width: 110px;
-}
-
-.singinup > div{
-    padding-left: 6%;
-}
-
-.singinup > div > a{
-    color: rgb(255, 255, 255);
-}
-
-.headerBottom{
-    width: 100%;
-    height: 70px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(40, 103, 155);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.header{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-}
-
-.menu{
-    width: 100%;
-    height: 100%;
-    margin-left: 15px;
-    margin-right: -10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+ul a{
+    
 }
 
 .O_Nas{
